@@ -16,4 +16,4 @@ for (a of pronoun){
 }
 
 //Method 2
-//pronoun.forEach(a => adj.forEach(b => noun.forEach(c => extensions.forEach(d => console.log(/*'Method 2: '+*/ a+b+c+d)))))
+pronoun.forEach(a => adj.forEach(b => noun.forEach(c => extensions.forEach(d => console.log(/*'Method 2: '+*/ a+b+c+d)))))
