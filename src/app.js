@@ -1,11 +1,19 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
+let pronoun = ['the', 'our'];
+let adj = ['great', 'big'];
+let noun = ['jogger', 'racoon'];
+let extensions = ['.com', '.net', '.us', '.io'];
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+//Method 1
+for (a of pronoun){
+    for (b of adj){
+        for (c of noun){
+            for (d of extensions){
+            console.log(/*'Method 1: ' +*/ a + b + c + d)
+            }
+        }
+    }
+}
+
+//Method 2
+pronoun.forEach(a => adj.forEach(b => noun.forEach(c => extensions.forEach(d => console.log(/*'Method 2: '+*/ a+b+c+d)))))
